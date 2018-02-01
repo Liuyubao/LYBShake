@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController, AVAudioPlayerDelegate {
+    
     @IBOutlet weak var upImg: UIImageView!
     @IBOutlet weak var downImg: UIImageView!
     
