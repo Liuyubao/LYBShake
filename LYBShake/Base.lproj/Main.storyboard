@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LYBShake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="y7r-lB-j8x">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock_down" translatesAutoresizingMaskIntoConstraints="NO" id="bBO-ZY-Td9">
+                                <rect key="frame" x="97.5" y="300" width="180" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UgK-KA-zKI"/>
+                                    <constraint firstAttribute="width" constant="180" id="s2b-Ti-W4z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock_up" translatesAutoresizingMaskIntoConstraints="NO" id="dLS-LZ-KRm">
+                                <rect key="frame" x="97.5" y="220" width="180" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Wl5-H6-Jjp"/>
+                                    <constraint firstAttribute="width" constant="180" id="bDB-QN-AjP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bBO-ZY-Td9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DtE-U3-K6N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y7r-lB-j8x" secondAttribute="bottom" id="HU5-jX-Mxd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="dLS-LZ-KRm" secondAttribute="top" constant="-200" id="K9i-sL-1dj"/>
+                            <constraint firstItem="dLS-LZ-KRm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pbm-Rj-6ps"/>
+                            <constraint firstItem="bBO-ZY-Td9" firstAttribute="top" secondItem="dLS-LZ-KRm" secondAttribute="bottom" id="SZy-QX-IVp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y7r-lB-j8x" secondAttribute="trailing" id="hbI-lL-p6y"/>
+                            <constraint firstItem="y7r-lB-j8x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kxQ-VY-haQ"/>
+                            <constraint firstItem="y7r-lB-j8x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="woZ-Nr-rOO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="downImg" destination="bBO-ZY-Td9" id="Bxn-00-tBf"/>
+                        <outlet property="upImg" destination="dLS-LZ-KRm" id="6B4-0g-H4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg2" width="368" height="667"/>
+        <image name="rock_down" width="450" height="254"/>
+        <image name="rock_up" width="450" height="254"/>
+    </resources>
+</document>
